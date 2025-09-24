@@ -1,0 +1,49 @@
+import React from "react";
+import { ScrollView, StyleSheet, View } from "react-native";
+import Bai1 from "@/app/(tabs)/Bai1";
+import Bai2 from "@/app/(tabs)/Bai2";
+import Bai3 from "@/app/(tabs)/Bai3";
+import Bai4 from "@/app/(tabs)/Bai4";
+import Bai5 from "@/app/(tabs)/Bai5";
+import Bai6 from "@/app/(tabs)/Bai6";
+import Bai7 from "@/app/(tabs)/Bai7";
+import Bai8 from "@/app/(tabs)/Bai8";
+import Bai9 from "@/app/(tabs)/Bai9";
+import Bai10 from "@/app/(tabs)/Bai10";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+export default function HomeScreen() {
+  return (
+    <SafeAreaView style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        <View style={styles.section}><Bai1 /></View>
+        <View style={styles.section}><Bai2 /></View>
+        <View style={styles.section}><Bai3 /></View>
+        <View style={styles.section}><Bai4 /></View>
+        <View style={styles.section}><Bai5 /></View>
+        <View style={styles.section}><Bai6 /></View>
+        <View style={styles.section}><Bai7 /></View>
+        <View style={styles.section}><Bai8 /></View>
+        <View style={styles.section}><Bai9 /></View>
+        <View style={styles.section}><Bai10 /></View>
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#f0f0f0",
+  },
+  scrollContent: {
+    padding: 10,
+  },
+  section: {
+    marginBottom: 20,
+    backgroundColor: "#fff",
+    borderRadius: 8,
+    padding: 10,
+    elevation: 3,
+  },
+});
